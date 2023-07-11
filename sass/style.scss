@@ -1,20 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /*start global styles*/
-.body{
+.body {
     font-family: 'Lato', sans-serif;
 }
-.container{
+
+.container {
     max-width: 1280px;
     margin: auto;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 900;
 }
-p{
+
+p {
     font-size: 18px;
     margin: 20px 0px;
     line-height: 30px;
@@ -22,78 +31,272 @@ p{
     font-weight: 400;
 
 }
-.btn-primary{
+
+.btn-primary {
     background-color: #E55473;
     color: white;
     padding: 20px 43px;
     border-radius: 10px;
     text-decoration: none;
     font-size: 22px;
-    
+    border: 0;
+
 }
-img{
+
+img {
     margin-bottom: -5px;
 }
+
 /*end global styles*/
+/*===============
+start herader styles
+================*/
+header {
+    background-color: rgb(58, 58, 58);
+    color: white;
+    padding: 15px;
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            font-size: 35px;
+
+            .red {
+                color: red;
+            }
+        }
+        .menu{
+            ul{
+                display: flex;
+                li{
+                    list-style-type: none;
+                    
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        padding: 5px 10px;
+                        transition: 0.3s all;
+                        border-radius: 5px;
+                    }
+                    a:hover{
+                        background-color: #E55473;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
 /*===============
 start hero styles
 ================*/
-#hero{
+#hero {
     background-color: #FCEEF1;
     padding-top: 50px;
-    .content{
+
+    .content {
         display: flex;
         align-items: center;
-        justify-content:space-between;
+        justify-content: space-between;
 
-        .left{
+        .left {
             padding-bottom: 50px;
-            h1{
+
+            h1 {
                 font-size: 80px;
                 font-weight: 900;
             }
-            p{
+
+            p {
                 max-width: 750px;
-                text-shadow: 4px 5px 4px rgba(85,76,76,0.6);
+                text-shadow: 4px 5px 4px rgba(85, 76, 76, 0.6);
             }
         }
-        .right{
+
+        .right {
             text-align: right;
-            img{
+
+            img {
                 width: 70%;
             }
         }
     }
 }
+
 /*===============
 start featured styles
 ================*/
-#featured{
+#featured {
     padding: 100px 0;
     text-align: center;
 
-    h2{
+    h2 {
         font-size: 40px;
     }
-    .flowers{
+
+    .flowers {
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        .item{
-            .flower-box{
+        .item {
+            .flower-box {
                 background-color: #F2DEE7;
                 border-radius: 50% 50% 0 0;
                 margin-bottom: 20px;
-                img{
-                    
-                    padding: 70px 45px 0px 45px ;
+
+                img {
+
+                    padding: 70px 45px 0px 45px;
                 }
             }
-            h3{
+
+            h3 {
                 font-size: 24px;
                 text-decoration: underline;
             }
         }
+    }
+}
+
+/*===============
+start hot deals styles
+================*/
+#hotdeal {
+    padding: 70px 0px;
+    background-color: #FEF6F8;
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .description {
+            text-align: center;
+
+            h2 {
+                font-size: 40px;
+
+                .red {
+                    color: red;
+                    font-size: 42px;
+                }
+            }
+        }
+
+    }
+}
+
+/*===============
+start special items styles
+================*/
+#special-items {
+    padding: 100px 0px;
+
+    .content {
+        background-color: #F4F4F4;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+
+        .item {
+            padding: 50px;
+
+            img {
+                width: 100px;
+            }
+        }
+    }
+}
+
+/*===============
+start instagram styles
+================*/
+#instagram {
+    padding: 70px 0px;
+    text-align: center;
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .flowers {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+/*===============
+start contact styles
+================*/
+#contact {
+    .content {
+        background-image: url('../images/rectangle\ 9.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 100px 50px;
+
+        h2 {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .form {
+            form {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                max-width: 650px;
+                margin: auto;
+
+                input {
+                    width: 100%;
+                    padding: 25px;
+                    margin-right: 10px;
+                    border-radius: 10px;
+                    border: 0;
+                }
+            }
+        }
+    }
+}
+
+/*===============
+start footer styles
+================*/
+footer {
+    margin-top: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+
+    h2 {
+        font-size: 48px;
+
+        .red {
+            color: red;
+        }
+    }
+
+    .copyright {
+        font-size: 12px;
     }
 }

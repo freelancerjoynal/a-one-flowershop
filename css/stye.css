@@ -14,7 +14,12 @@
   margin: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 900;
 }
 
@@ -33,6 +38,7 @@ p {
   border-radius: 10px;
   text-decoration: none;
   font-size: 22px;
+  border: 0;
 }
 
 img {
@@ -40,6 +46,46 @@ img {
 }
 
 /*end global styles*/
+/*===============
+start herader styles
+================*/
+header {
+  background-color: rgb(58, 58, 58);
+  color: white;
+  padding: 15px;
+}
+header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .content .logo {
+  font-size: 35px;
+}
+header .content .logo .red {
+  color: red;
+}
+header .content .menu ul {
+  display: flex;
+}
+header .content .menu ul li {
+  list-style-type: none;
+}
+header .content .menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  transition: 0.3s all;
+  border-radius: 5px;
+}
+header .content .menu ul li a:hover {
+  background-color: #E55473;
+  color: black;
+}
+
 /*===============
 start hero styles
 ================*/
@@ -96,6 +142,119 @@ start featured styles
 #featured .flowers .item h3 {
   font-size: 24px;
   text-decoration: underline;
+}
+
+/*===============
+start hot deals styles
+================*/
+#hotdeal {
+  padding: 70px 0px;
+  background-color: #FEF6F8;
+}
+#hotdeal .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#hotdeal .content .description {
+  text-align: center;
+}
+#hotdeal .content .description h2 {
+  font-size: 40px;
+}
+#hotdeal .content .description h2 .red {
+  color: red;
+  font-size: 42px;
+}
+
+/*===============
+start special items styles
+================*/
+#special-items {
+  padding: 100px 0px;
+}
+#special-items .content {
+  background-color: #F4F4F4;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+#special-items .content .item {
+  padding: 50px;
+}
+#special-items .content .item img {
+  width: 100px;
+}
+
+/*===============
+start instagram styles
+================*/
+#instagram {
+  padding: 70px 0px;
+  text-align: center;
+}
+#instagram h2 {
+  font-size: 40px;
+}
+#instagram .flowers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+#instagram .flowers img {
+  width: 100%;
+}
+
+/*===============
+start contact styles
+================*/
+#contact .content {
+  background-image: url("../images/rectangle 9.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 50px;
+}
+#contact .content h2 {
+  font-size: 40px;
+  text-align: center;
+}
+#contact .content p {
+  text-align: center;
+}
+#contact .content .form form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 650px;
+  margin: auto;
+}
+#contact .content .form form input {
+  width: 100%;
+  padding: 25px;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 0;
+}
+
+/*===============
+start footer styles
+================*/
+footer {
+  margin-top: 100px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px 0px;
+}
+footer h2 {
+  font-size: 48px;
+}
+footer h2 .red {
+  color: red;
+}
+footer .copyright {
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=stye.css.map */
